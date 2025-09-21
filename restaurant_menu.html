@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jiji's Diner Menu</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                line-height: 1.5;
+            }
+
+            header {
+                text-align: center;
+                padding: 16px;
+            }
+            
+            #header-img {
+                height: 300px;
+                width: 100%;
+                object-fit: cover;
+                border: 0;
+            }
+
+            nav h2 { display: inline-block; 
+                margin: 8px 12px; 
+                font-size: 1.1rem; 
+            }
+
+            nav a { 
+                text-decoration: 
+                none; 
+                color: #333; 
+            }
+
+            nav a:hover { 
+                text-decoration: underline;
+             }
+
+            main { 
+                padding: 0 35px 35px; 
+            }
+
+            section { 
+                margin-top: 24px; 
+            }
+
+            article { 
+                display: grid; 
+                grid-template-columns: 140px 1fr; 
+                gap: 16px; 
+                align-items: start; 
+                padding: 12px 0; 
+            }
+
+            article img {
+                 width: 140px;
+                  height: 100px; 
+                  object-fit: cover; 
+                  border-radius: 8px; 
+                }
+
+            hr { 
+                border: none; 
+                border-top: 1px solid #eee; 
+                margin: 8px 0 16px; 
+            }
+
+            form {
+                 max-width: 700px; 
+                }
+
+            fieldset { 
+                border: 1px solid #ddd; 
+                border-radius: 8px; 
+                padding: 12px 14px; 
+                margin: 16px 0; 
+            }
+
+            legend { 
+                font-weight: bold; 
+            }
+
+            label { 
+                display: inline-block; 
+                margin: 6px 8px 6px 0; 
+            }
+
+            .qty { 
+                display: block; 
+                margin: 6px 0 10px; 
+            }
+
+            textarea { 
+                width: 100%; 
+                min-height: 70px; 
+            }
+
+            .submit-row { 
+                text-align: 
+                right; margin-top: 16px; 
+            }
+
+            input[type="submit"] { 
+                padding: 10px 16px; 
+                border: none; 
+                border-radius: 6px;
+                background: #333; 
+                 color: #fff;
+                cursor: pointer; 
+            }
+
+            input[type="submit"]:hover { 
+                opacity: 0.9; 
+            }
+
+            footer { 
+                text-align: center; 
+                padding: 16px; 
+                background: #fafafa; 
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <img id="header-img" src="https://images.unsplash.com/photo-1532980400857-e8d9d275d858?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" alt="Fresh Food">
+            <h1>Jiji's Diner</h1>
+            <nav>
+                <h2><a href="#menu">Menu</a></h2>
+                <h2><a href="#order-form">Order Form</a></h2>
+            </nav>
+        </header>
+
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+
+                <article>
+                    <img src="https://www.itl.cat/pngfile/big/163-1633516_1280-x-food-with-white-background.jpg" alt="Pancakes with strawberries">
+                    <div>
+                        <h3>Jiji's Pancakes Special</h3>
+                        <p><i>Fluffy pancakes topped with fresh-cut strawberries and warm maple syrup. <strong>$8.99</strong></i></p>
+                    </div>
+                </article>
+                <hr>
+
+                <article>
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/025/010/352/small_2x/snack-meat-beef-background-fast-hamburger-white-food-burger-food-sandwich-fast-generative-ai-photo.jpg" alt="Double cheeseburger">
+                    <div>
+                        <h3>Jiji's Double Cheese Burger</h3>
+                        <p><i>Two juicy patties, melted cheese, lettuce, tomatoes, and onions on a toasted bun. <strong>$11.49</strong></i></p>
+                    </div>
+                </article>
+                <hr>
+
+                <article>
+                    <img src="https://www.kindpng.com/picc/m/194-1941460_fast-food-white-background-hd-png-download.png" alt="Cheese, onion, and tomato pizza">
+                    <div>
+                        <h3>Jiji's Pizza</h3>
+                        <p><i>Golden-crust pizza with cheese, tomatoes, and savory onions. <strong>$12.99</strong></i></p>
+                    </div>
+                </article>
+                <hr>
+            </section>
+
+            <section id="order-form">
+                <h2>Place Your Order</h2>
+                <form>
+                <!-- Pancakes -->
+                    <fieldset>
+                        <legend>Pancakes Special</legend>
+                        <label class="qty" for="qty-pancakes">Quantity</label>
+                        <input id="qty-pancakes" name="qty_pancakes" type="number" min="0" value="0">
+
+                        <h3>Add-ons</h3>
+                        <label><input type="checkbox" name="pancake_addons" value="strawberries"> Strawberries</label><br/>
+                        <label><input type="checkbox" name="pancake_addons" value="whipped_cream"> Whipped cream</label><br/>
+                        <label><input type="checkbox" name="pancake_addons" value="choc_chips"> Chocolate chips</label><br/>
+                        <label><input type="checkbox" name="pancake_addons" value="maple_syrup"> Extra maple syrup</label><br/>
+                        <label><input type="checkbox" name="pancake_addons" value="nuts"> Crushed nuts</label><br/>
+
+                        <h4>Special Request</h4>
+                        <textarea name="pancake_notes" placeholder="Anything on your mind!"></textarea>
+                    </fieldset>
+
+                    <!-- Double Cheese Burger -->
+                    <fieldset>
+                        <legend>Double Cheese Burger</legend>
+                        <label class="qty" for="qty-burger">Quantity</label>
+                        <input id="qty-burger" name="qty_burger" type="number" min="0" value="0">
+
+                        <h3>Add-ons</h3>
+                        <label><input type="checkbox" name="burger_addons" value="extra_cheese"> Extra cheese</label><br/>
+                        <label><input type="checkbox" name="burger_addons" value="bacon"> Bacon strips</label><br/>
+                        <label><input type="checkbox" name="burger_addons" value="fried_egg"> Fried egg</label><br/>
+                        <label><input type="checkbox" name="burger_addons" value="mushrooms"> Grilled mushrooms</label><br/>
+                        <label><input type="checkbox" name="burger_addons" value="jalapenos"> Jalapeños</label><br/>
+                        <label><input type="checkbox" name="burger_addons" value="pickles"> Pickles</label><br/>
+                        <label><input type="checkbox" name="burger_addons" value="bbq"> BBQ sauce</label><br/>
+                        <label><input type="checkbox" name="burger_addons" value="onion_rings"> Onion rings</label><br/>
+
+                        <h4>Special Request</h4>
+                        <textarea name="burger_notes" placeholder="Anything on your mind!"></textarea>
+                    </fieldset>
+
+                    <!-- Pizza -->
+                    <fieldset>
+                        <legend>Pizza</legend>
+                        <label class="qty" for="qty-pizza">Quantity</label>
+                        <input id="qty-pizza" name="qty_pizza" type="number" min="0" value="0">
+
+                        <h3>Add-ons</h3>
+                        <label><input type="checkbox" name="pizza_addons" value="pepperoni"> Pepperoni</label><br/>
+                        <label><input type="checkbox" name="pizza_addons" value="sausage"> Sausage</label><br/>
+                        <label><input type="checkbox" name="pizza_addons" value="chicken"> Grilled chicken</label><br/>
+                        <label><input type="checkbox" name="pizza_addons" value="bell_peppers"> Bell peppers</label><br/>
+                        <label><input type="checkbox" name="pizza_addons" value="mushrooms"> Mushrooms</label><br/>
+                        <label><input type="checkbox" name="pizza_addons" value="olives"> Olives</label><br/>
+                        <label><input type="checkbox" name="pizza_addons" value="pineapple"> Pineapple</label><br/>
+                        <label><input type="checkbox" name="pizza_addons" value="extra_cheese"> Extra cheese</label><br/>
+
+                        <h4>Special Request</h4>
+                        <textarea name="pizza_notes" placeholder="Anything on your mind!"></textarea>
+                    </fieldset>
+
+                    <div class="submit-row">
+                        <input type="submit" value="Go To Checkout">
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made with love by LdLightMan</p>
+        </footer>
+  </body>
+</html>
