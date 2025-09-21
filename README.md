@@ -24,7 +24,3 @@ and an order form.
 -   Images are sourced from Unsplash, Vecteezy, and KindPNG for
     demonstration purposes.
 -   **Note:** ChatGPT helped with some styling elements.
-
-------------------------------------------------------------------------
-
-Made with ❤️ by **LdLightMan**
