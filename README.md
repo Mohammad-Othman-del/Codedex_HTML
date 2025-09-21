@@ -1,33 +1,30 @@
-# Jiji's Diner 🍔🍕🥞
+# Jiji's Diner Menu
 
-This project is part of the **Codédex HTML Final Project**.  
-It’s a fully structured restaurant menu webpage built with pure HTML (and a little CSS for styling). The project demonstrates core HTML skills such as semantic structure, forms, labels, navigation, and basic styling.
+This project is a simple HTML and inline CSS showcasing a diner menu
+for **Jiji's Diner**.\
+It features a styled header, navigation bar, menu section with images,
+and an order form.
 
----
+## Features
 
-## 📖 Project Overview
-- **Header** with a banner image, restaurant name, and navigation links.
-- **Main Content** split into two sections:
-  - **Menu Section**: Three menu items (pancakes, burger, pizza), each with an image, description, and price.
-  - **Order Form Section**: A functional form where customers can:
-    - Choose quantities with number inputs.
-    - Select add-ons using checkboxes/radio buttons.
-    - Add special requests with a textarea.
-    - Submit the form via a “Go To Checkout” button.
-- **Footer** with a personalized message: *“Made with love by LdLightMan”*.
+-   Responsive header image and navigation links
+-   Menu section with food images, descriptions, and prices
+-   Interactive order form with quantity selectors, add-ons, and special
+    request notes
+-   Styled layout using modern CSS grid and form elements
 
----
+## File Structure
 
-## 🛠️ Skills Demonstrated
-- Semantic HTML structure (`<!DOCTYPE html>`, `<header>`, `<main>`, `<section>`, `<article>`, `<footer>`).
-- Forms with inputs, labels, checkboxes, radio buttons, and textarea.
-- Linking sections with navigation anchors.
-- Basic inline/internal CSS for layout and presentation.
-- Accessibility best practices (`id` + `for`, grouping with `<fieldset>` and `<legend>`).
+-   `resturant-menu.html` → Main page containing the diner menu and order form
+-   `style` (inline CSS) → Contains the styling for layout, typography,
+    and interactive elements
 
----
+## Credits
 
-## 🚀 How to View
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Mohammad-Othman-del/Codedex_HTML.git
+-   Images are sourced from Unsplash, Vecteezy, and KindPNG for
+    demonstration purposes.
+-   **Note:** ChatGPT helped with some styling elements.
+
+------------------------------------------------------------------------
+
+Made with ❤️ by **LdLightMan**
